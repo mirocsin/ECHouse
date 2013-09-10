@@ -12,7 +12,10 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-            }
+            }    
+            #container .big { height: 150px; width: 180px}
+            #container .big .ui-btn-inner { padding-top:0px; padding-left:40px }
+
         </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -51,14 +54,52 @@
                     <a href="" data-icon="refresh" class="ui-btn-right">Sync</a>
                 </div>
                 <div data-role="content" data-theme="">
-                    <a id="btnstylist" data-role="button" href="" data-theme="b" data-inline="true" >Stylist 1</a>
-                    <!--<a class="ui-btn-left" data-icon="arrow-l" href="#" data-theme="a" id="btnstylist">Stylist 1</a>-->
+                    <table>
+                        <tr>
+                            <td>
+                                <a id="btnstylist1" data-role="button" href="" data-theme="b" data-inline="true" class="big" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 1
+                                </a>
+                            </td>
+                            <td>
+                                <a id="btnstylist2" onClick="btnstylist_click()" data-role="button" href="" data-theme="b" data-inline="true" class="big" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 2
+                                </a>
+                            </td>
+                            <td>
+                                <a id="btnstylist3" onClick="btnstylist_click()" data-role="button" href="" data-theme="b" data-inline="true" class="big" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 3
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
                     <script src="js/pg_stylist.js"></script>
                 </div>
                 <div data-role="footer" data-position="fixed" data-id="TestPersist">                      
                 </div>
             </div> <!--End of Stylist-->
-            
+
             <!--Payment Settlement-->
             <div data-role="page" id="pg_settlement" data-theme="d">
                 <div data-role="header" data-position="fixed">
@@ -75,7 +116,7 @@
                 <div data-role="footer" data-position="fixed" data-id="TestPersist">                      
                 </div>
             </div> <!--End of Payment Settlement-->
-            
+
         </div> <!--End of #Container -->
     </body>
 </html>
