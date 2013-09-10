@@ -6,6 +6,7 @@
         <style>
             body {
                 margin: 0;
+                height:100%;
             }
 
             #container {
@@ -13,9 +14,15 @@
                 width: 100%;
                 height: 100%;
             }    
-            #container .big { height: 150px; width: 180px}
-            #container .big .ui-btn-inner { padding-top:0px; padding-left:40px }
+            #container .btnstylist { height: 160px; width: 180px}
+            #container .btnstylist .ui-btn-inner {padding-top:0px; padding-left:40px }
 
+            #container .btnpayment {height: 160px; }
+            #container .btnpayment .ui-btn-inner {padding-top:10px; padding-left:350px}
+
+/*            #pg_settlement {
+                height : 100%;
+            }*/
         </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -57,7 +64,7 @@
                     <table>
                         <tr>
                             <td>
-                                <a id="btnstylist1" data-role="button" href="" data-theme="b" data-inline="true" class="big" >
+                                <a id="btnstylist1" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
                                     <table>
                                         <tr>
                                             <td>
@@ -65,11 +72,23 @@
                                             </td> 
                                         </tr>                                           
                                     </table>       
-                                    Station 1
+                                    Station1
                                 </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: <b>5</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: <b>20 mins</b>
+                                        </td>                                        
+                                    </tr>
+                                </table>
                             </td>
                             <td>
-                                <a id="btnstylist2" onClick="btnstylist_click()" data-role="button" href="" data-theme="b" data-inline="true" class="big" >
+                                <a id="btnstylist2"  data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
                                     <table>
                                         <tr>
                                             <td>
@@ -79,9 +98,21 @@
                                     </table>       
                                     Station 2
                                 </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
                             </td>
                             <td>
-                                <a id="btnstylist3" onClick="btnstylist_click()" data-role="button" href="" data-theme="b" data-inline="true" class="big" >
+                                <a id="btnstylist3" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
                                     <table>
                                         <tr>
                                             <td>
@@ -91,8 +122,313 @@
                                     </table>       
                                     Station 3
                                 </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist4" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 4
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist5" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 5
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <a id="btnstylist6" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 6
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist7" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 7
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist8" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 8
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist9" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 9
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist10" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 10
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a id="btnstylist11" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 11
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist12" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 12
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist13" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 13
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist14" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 14
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <a id="btnstylist15" data-role="button" href="" data-theme="b" data-inline="true" class="btnstylist" >
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="css/images/emptystylist.png" style="height: 120px">      
+                                            </td> 
+                                        </tr>                                           
+                                    </table>       
+                                    Station 15
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Waiting in Line: 0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Avg to finish: 0 mins
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
                     </table>
                     <script src="js/pg_stylist.js"></script>
                 </div>
@@ -101,20 +437,77 @@
             </div> <!--End of Stylist-->
 
             <!--Payment Settlement-->
-            <div data-role="page" id="pg_settlement" data-theme="d">
-                <div data-role="header" data-position="fixed">
-                    <a href="#pg_menu" data-icon="back" data-rel="back">Back</a>
+            <div data-role="page" id="pg_settlement" data-theme="d"  >
+                <div data-role="header" >
+                    <a href="" data-icon="back" id="btn_backpay">Back</a>
                     <h1>Welcome to EC House</h1>
-                    <a href="" data-icon="refresh" class="ui-btn-right">Sync</a>
+                    <a href="" data-icon="refresh" class="ui-btn-right">Sync</a>                    
                 </div>
-                <div data-role="content" data-theme="">
-                    <a class="ui-btn-left" data-icon="arrow-l" href="#" data-theme="a" id="btncash">Cash</a>
-                    <a class="ui-btn-left" data-icon="arrow-l" href="#" data-theme="a" id="btnnets">Nets</a>
-                    <a class="ui-btn-left" data-icon="arrow-l" href="#" data-theme="a" id="btnothers">Others</a>
+                <div data-role="content" data-theme="" >
+                    <table border="0" style="width:100%;" cellspacing="0px" cellpadding="0px">
+                        <tr>
+                            <td style="text-align: center; font-size:xx-large; vertical-align: bottom">
+                                <p>Please select mode of payment</p>
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; font-size:x-large; vertical-align: bottom">                               
+                                <p style="font-size: xx-large">Amount Collected: $ <label id="lblpayamount"></label>  </p>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table border="0" style="width:100%;" cellspacing="0px" cellpadding="0px" >
+                                    <tr>
+                                        <td >
+                                            <a id="btncash" data-role="button" href="" data-theme="b" class="btnpayment" >
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="css/images/cash10.jpg" style="height: 120px">
+                                                        </td> 
+                                                    </tr>                                           
+                                                </table>       
+                                            </a>                                                   
+                                        </td>        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a id="btnnets" data-role="button" href="" data-theme="b" class="btnpayment" >
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="css/images/nets.jpg" style="height: 120px">   
+                                                        </td> 
+                                                    </tr>                                           
+                                                </table>       
+                                            </a>
+                                        </td>
+                                    </tr>             
+                                    <tr>
+                                        <td>
+                                            <a id="btnothers" data-role="button" href="" data-theme="b" class="btnpayment" >
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="css/images/vouchers.jpg" style="height: 120px">   
+                                                        </td> 
+                                                    </tr>                                           
+                                                </table>       
+                                            </a>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td>
+                                            <label id="lbldispense" style='font-size: xx-large'></label>                                            
+                                        </td>
+                                    </tr>     
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
                     <script src="js/pg_settlement.js"></script>
-                </div>
-                <div data-role="footer" data-position="fixed" data-id="TestPersist">                      
-                </div>
+                </div>             
             </div> <!--End of Payment Settlement-->
 
         </div> <!--End of #Container -->
