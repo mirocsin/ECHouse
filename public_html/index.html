@@ -20,9 +20,16 @@
             #container .btnpayment {height: 160px; }
             #container .btnpayment .ui-btn-inner {padding-top:10px; padding-left:350px}
 
-/*            #pg_settlement {
-                height : 100%;
-            }*/
+            #container .btnadmin {height: 160px; }
+            #container .btnadmin .ui-btn-inner {padding-top:10px; padding-left:0px}
+
+            /*            #pg_settlement {
+                            height : 100%;
+                        }*/
+            
+            #pg_admin .ui-content{margin-top: 50px    
+                
+            }
         </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -56,7 +63,7 @@
             <!--Stylist Select-->
             <div data-role="page" id="pg_stylist" data-theme="d">
                 <div data-role="header" data-position="fixed">
-                    <a href="#pg_menu" data-icon="gear">Administrator</a>
+                    <a href="#popupLogin" data-icon="gear" id="btnadmin_page" data-position-to="window" data-role="button" data-inline="true">Administrator</a>
                     <h1>Welcome to EC House</h1>
                     <a href="" data-icon="refresh" class="ui-btn-right">Sync</a>
                 </div>
@@ -436,6 +443,28 @@
                 </div>
             </div> <!--End of Stylist-->
 
+            <!--Login -->
+            <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all" style="width:35%">
+                <div style="padding:10px 20px;">
+                    <h3>Please sign in</h3>
+                    <label for="un" class="ui-hidden-accessible">Username:</label>
+                    <input type="text" name="user" id="txtuser" value="" placeholder="username" data-theme="a" />
+                    <label for="pw" class="ui-hidden-accessible">Password:</label>
+                    <input type="password" name="pass" id="txtpassword" value="" placeholder="password" data-theme="a" />
+                    <table style="width:100%">
+                        <tr>
+                            <td style="width:50%">
+                                <a href="" data-role="button" data-theme="e" id="btnok_login">Ok</a>        
+                            </td>
+                            <td style="width:50%">
+                                <a href="" data-role="button" data-theme="b" id="btncancel_login">Cancel</a>        
+                            </td>
+                        </tr>                        
+                    </table>                  
+                </div>                
+                <script src="js/popupLogin.js"></script>
+            </div> <!--End of Login -->
+
             <!--Payment Settlement-->
             <div data-role="page" id="pg_settlement" data-theme="d"  >
                 <div data-role="header" >
@@ -509,6 +538,55 @@
                     <script src="js/pg_settlement.js"></script>
                 </div>             
             </div> <!--End of Payment Settlement-->
+
+            <!-- Administrator -->
+            <div data-role="page" id="pg_admin" data-theme="d"  >
+                <div data-role="header" >
+                    <a href="" data-icon="back" id="btnback_admin">Back</a>
+                    <h1>Administrator</h1>
+                    <a href="" data-icon="refresh" class="ui-btn-right">Sync</a>                    
+                </div>
+                <div data-role="content" data-theme="" >
+                    <table border="0" style="width:100%" cellpadding="20px">
+                        <tr>
+                            <td style="width:33%">
+                                <a href="" data-role="button" data-theme="b" class="btnadmin">
+                                    <img src="css/images/alarm_clock-128.png" style="height: 128px">   
+                                    Clock IN/OUT</a>        
+                            </td>
+                            <td style="width:33%">
+                                <a href="" data-role="button" data-theme="b" class="btnadmin">
+                                    <img src="css/images/barber_scissors-128.png" style="height: 128px">  
+                                    Staff Schedule</a>        
+                            </td>
+                            <td style="width:33%">
+                                <a href="" data-role="button" data-theme="b" class="btnadmin">
+                                    <img src="css/images/cash_receiving-128.png" style="height: 128px">  
+                                    Refund</a>        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="width:100%" >
+                                <table style="width:100%" cellpadding="20px">
+                                    <tr>
+                                        <td style="width:50%">
+                                            <a href="" data-role="button" data-theme="b" class="btnadmin">
+                                                <img src="css/images/check_book-128.png" style="height: 128px">  
+                                                X-Report</a>        
+                                        </td>
+                                        <td style="width:50%">
+                                            <a href="" data-role="button" data-theme="b" class="btnadmin">
+                                                <img src="css/images/approval-128.png" style="height: 128px">  
+                                                Z-Report</a>        
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <script src="js/pg_admin.js"></script>
+                </div>             
+            </div> <!--End of Administrator-->
 
         </div> <!--End of #Container -->
     </body>

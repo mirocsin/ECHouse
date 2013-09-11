@@ -7,7 +7,8 @@ $("#pg_settlement").on("pageshow", function(event, ui) {
 });
 
 $('#btn_backpay').bind('touchstart', function(e) {
-    $.mobile.changePage("#pg_stylist", {transition: "slide", reverse: true});
+    //$.mobile.changePage("#pg_stylist", {transition: "slide", reverse: true});
+    $.mobile.changePage("#pg_stylist")
 });
 
 function btn_touchstart_settlement() {

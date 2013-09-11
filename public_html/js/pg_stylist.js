@@ -20,4 +20,8 @@ $("#pg_stylist").on("pageshow", function(event, ui) {
 function btn_touchstart() {
     $.mobile.changePage('#pg_settlement');
 }
-
+//
+//$('#btnadmin_page').bind('touchstart',function(e){
+//    //$.mobile.changePage('#pg_admin');
+//    $('#popupLogin').popup('open',{transition: "slideup"});
+//});
